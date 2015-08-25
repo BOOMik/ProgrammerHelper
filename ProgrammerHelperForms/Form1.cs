@@ -112,7 +112,7 @@ namespace ProgrammerHelperForms
             using (Graphics gdest = Graphics.FromImage(screenBlock))
             {
                 Graphics g = Graphics.FromImage(screenBlock);
-                g.CopyFromScreen(Math.Max(0,location.X-50), Math.Max(0, location.Y-75), 0, 0, screenBlock.Size, CopyPixelOperation.SourceCopy);
+                g.CopyFromScreen(Math.Max(0,location.X-100), Math.Max(0, location.Y-75), 0, 0, screenBlock.Size, CopyPixelOperation.SourceCopy);
                 pictureBox1.Image = ResizeImage(screenBlock,800,600);
             }
 
